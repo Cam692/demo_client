@@ -1,0 +1,59 @@
+*{
+    /* 清楚默认的margin和padding的外边距 */
+    margin: 0;
+    padding: 0;
+}
+body{
+    /* body默认有宽，没有高 */
+    height: 100vh;
+    width: 100vw;
+    /* 设置相对定位，方便子元素居中 */
+    position: relative;
+}
+.denglu{
+    /* 设置绝对定位 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* div元素默认由内容撑开，没有内容是需要设置长宽 */
+    height: 200px;
+    width: 300px;
+    transform: translate(-50%,-50%);
+    /* background-color: aquamarine; */
+}
+.denglu div:first-child{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.denglu div span{
+    font-size: 20px;
+}
+.denglu div input{
+    font-size: 20px;
+    height: 20px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+}
+
+
+.denglu div:last-child button{
+    height: 30px;
+    width: 100px;
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: none;
+}
+
+.denglu div:last-child div:first-child button{
+    float: left;
+    margin-left: 10px;
+}
+
+.denglu div:last-child div:last-child{
+    float: right;
+    margin-right: 10px;
+}

@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+
+
+/* 设置body的长宽 */
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.top {
+    height: 60px;
+    /* background-color: aqua; */
+}
+
+.top>.left {
+    float: left;
+    height: 60px;
+    width: 100px;
+    margin-left: 50px;
+    /* background-color: black; */
+    border-radius: 30px;
+    font-size: 25px;
+}
+
+.top>.right {
+    height: 60px;
+    float: right;
+    /* width: 150px; */
+    margin-right: 20px;
+    /* background-color: black; */
+}
+
+.top>.right>.left {
+    float: left;
+}
+
+.top>.right>.right {
+    float: right;
+}
+
+.top>.right>.left>img {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    background-color: aqua;
+    margin-right: 20px;
+}
+
+.top>.right>.left>span {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.top>.right>.right {
+    margin-right: 90px;
+}
+
+.top>.right>.right>span {
+    /* height: 60px; */
+    position: absolute;
+    /* margin-right: 190px; */
+    width: 60px;
+    /* top: 50%;
+    margin-top: -30px; */
+}
+
+.left_1 {
+    height: 65px;
+}
+
+
+/* 显示主体区域的内容 */
+
+
+/* 主题区域左边的内容，也就是导航栏 */
+
+.center .left .left_2 ul>div {
+    /* display: none; */
+}
+
+
+/* 主体区域右边的内容 */

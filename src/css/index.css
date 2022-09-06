@@ -4,6 +4,10 @@
     /* border: 1px solid red; */
 }
 
+li {
+    list-style: none;
+}
+
 
 /* 设置body的长宽 */
 
@@ -79,8 +83,39 @@ body {
 
 /* 主题区域左边的内容，也就是导航栏 */
 
+.center .left .left_2 {
+    background-color: darkgrey;
+}
+
 .center .left .left_2 ul>div {
     /* display: none; */
+}
+
+.center .left .left_2 .ul {
+    height: 50px;
+}
+
+.center .left .left_2 ul>li {
+    /* border: 1px solid red; */
+    /* height: 50px; */
+    color: white;
+    /* width: 100px; */
+    padding-left: 30px;
+    line-height: 50px;
+    /* background-color: black; */
+}
+
+
+/* .wenzhangguanli ul {
+    height: 50px;
+} */
+
+.wenzhangguanli ul {
+    padding-left: 40px;
+}
+
+.gerenzhongx ul {
+    padding-left: 40px;
 }
 
 

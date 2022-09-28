@@ -1,0 +1,22 @@
+.top {
+    margin: 10px 5px;
+    display: flex;
+}
+
+.top>div {
+    flex: 1;
+    margin: 10px;
+    height: 80px;
+    align-items: center;
+    background-color: aquamarine;
+}
+
+.top .span1 {
+    display: inline-block;
+    margin: 10px 0px;
+    font-size: 24px;
+}
+
+.top .span3 {
+    display: block;
+}

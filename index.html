@@ -7,66 +7,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./font_3518558_btp4v5x21fn/iconfont.css">
     <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/font/font-top/iconfont.css">
+    <link rel="stylesheet" href="./src/font/font-left/iconfont.css">
+    <script src="./src/js/index.js" defer></script>
     <title>后台管理页面</title>
 </head>
 
 <body>
     <div class="top">
         <div class="left">
-            图标
+            后台管理系统
         </div>
-
         <div class="right">
-            <div class="left">
-                <img src="" alt="">头像
-                <span>个人中心按钮</span>
+            <div class="left" style="position:relative">
+                <a href="#" style="color:aliceblue">
+                    <img src="./u=2880518663,495982857&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto.webp" alt="">
+                    <span>个人中心</span>
+                    <i class="iconfont icon-xialacaidanjiantou xuanzhuan"></i>
+                </a>
+                <dl style="position:absolute">
+                    <dd>
+                        <a href="src\gerenzhongxin\chongzhimima.html" target="iframe" id="jibenziliao">
+                            基本资料
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="src\gerenzhongxin\genghuantouxiang.html" target="iframe" id="genghuantouxiang">
+                            更换头像
+                        </a>
+                    </dd>
+                    <dd>
+                        <a href="src\gerenzhongxin\chongzhimima.html" target="iframe" id="chongzhimima">
+                            重置密码
+                        </a>
+                    </dd>
+                </dl>
             </div>
-            <div class="right" style="position: relative;">
-                <span>
-                    <i >图标
-                    </i>
-                    退出按钮
-                </span>
+            <div class="right">
+                <a href="javascript:" id="tuichu" onclick="tuichu()" style="color:aliceblue">
+                    <i class="iconfont icon-tuichu"></i>
+                    <span style="color:aliceblue">
+                        退出
+                    </span>
+                </a>
             </div>
         </div>
     </div>
 
     <!-- 中心显示区域 -->
     <div>
-        <div class="center" style="display: flex;">
+        <div class="center" style="display: flex; ">
             <div class="left" style="flex: 1;">
                 <div class="left_1">
-                    <img src="" alt="">
-                    <span>名称</span>
+                    <div style="width: 178.71px;">
+                        <img src="./u=2880518663,495982857&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto.webp" alt="图片加载失败">
+                        <span>欢迎</span>
+                        <span>研究院</span>
+                    </div>
                 </div>
                 <div class="left_2">
-                    <ul>
-                        <li><i class="iconfont icon-Leftbar_index_selected"></i>首页</li>
-                        <li><i class="iconfont icon-Calander"></i>文章管理<i class="iconfont icon-Downarrow"></i></li>
-                        <!-- 文章管理得分二级目录 -->
-                        <div class="wenzhangguanli">
-                            <ul>
-                                <li><i class="iconfont icon-Leftbar_feature"></i>文章类别</li>
-                                <li><i class="iconfont icon-Leftbar_feature"></i>文章列表</li>
-                                <li><i class="iconfont icon-Leftbar_feature"></i>发布文章</li>
-                            </ul>
-                        </div>
-                        <li><i class="iconfont icon-Calander"></i>个人中心 <i class="iconfont icon-Downarrow"></i></li>
-                        <!-- 个人中心的二级目录 -->
-                        <div class="gerenzhongx">
-                            <ul>
-                                <li><i class="iconfont icon-Leftbar_feature"></i>文章类别</li>
-                                <li><i class="iconfont icon-Leftbar_feature"></i>文章列表</li>
-                                <li><i class="iconfont icon-Leftbar_feature"></i>发布文章</li>
-                            </ul>
-                        </div>
-                    </ul>
+                    <!-- 自定义列表dl dt dd -->
+                    <dl>
+                        <dt>
+                            <a href="src\home\index.html" target="iframe">
+                                <i class="iconfont icon-shouye"></i>
+                                首页
+                            </a>
+                        </dt>
+                        <dt>
+                            
+                            <a href="#" id="wenzhangguanli">
+                                <i class="iconfont icon-navicon-wzgl" ></i>
+                                    文章管理
+                                <i class="iconfont icon-shangxia" style="float:right"></i>
+                            </a>
+                                <dd>
+                                    <a href="src\wenzhangguanli\wenzhangleibie.html" target="iframe"  style="display:none" id="wenzhangliebian">
+                                        <i class="iconfont icon-wenzhangguanli"></i>
+                                        文章类别
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="src\wenzhangguanli\wenzhangliebiao.html" target="iframe"   style="display:none" id="wenzhangliebiao">
+                                        <i class="iconfont icon-wenzhangguanli"></i>
+                                        文章列表
+                                    </a>
+                                </dd>
+                                <dd>
+                                    <a href="src\wenzhangguanli\fabuwenzhang.html" target="iframe"  style="display:none" id="fabuwenzhang">
+                                        <i class="iconfont icon-wenzhangguanli"></i>
+                                        发布文章
+                                    </a>
+                                </dd>
+                        </dt>
+                        <dt>
+                            <a href="#" id="gerenzhongxin">
+                                <i class="iconfont icon-gerenzhongxin" ></i>
+                                个人中心
+                                <i class="iconfont icon-shangxia" style="float:right"></i>
+                            </a>
+                            <dd>
+                                <a href="src\gerenzhongxin\chongzhimima.html" target="iframe" id="jibenziliao" style="display: none;">
+                                    <i class="iconfont icon-xingzhuang"></i>
+                                    基本资料
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="src\gerenzhongxin\genghuantouxiang.html" target="iframe" id="genghuantouxiang">
+                                    <i class="iconfont icon-xingzhuang"></i>
+                                    更换头像
+                                </a>
+                            </dd>
+                            <dd>
+                                <a href="src\gerenzhongxin\chongzhimima.html" target="iframe" id="chongzhimima">
+                                    <i class="iconfont icon-xingzhuang"></i>
+                                    重置密码
+                                </a>
+                            </dd>
+                        </dt>
+                    </dl>
                 </div>
             </div>
             <div class="right" style="flex: 7;">
-                12321
+                <iframe name="iframe" src="./src/home/index.html" frameborder="0" scrolling="no" id="iframe"></iframe>
             </div>
-            <!-- <iframe src="./loge.html" frameborder="0"></iframe> -->
         </div>
     </div>
 </body>
